@@ -2,10 +2,10 @@
 const mysql = require('mysql2');
 
 const pool = mysql.createPool({
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USERNAME || 'root',
-    password: process.env.DB_PASSWORD || '',
-    database: process.env.DB_DBNAME || 'chat-nodejs',
+    host: process.env.HOST || 'localhost',
+    user: process.env.USER || 'root',
+    password: process.env.PASSWORD || '',
+    database: process.env.DB || 'chat-nodejs',
     queueLimit : 0, 
     connectionLimit : 0 
 });
