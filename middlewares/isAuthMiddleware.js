@@ -1,5 +1,5 @@
 const isAuth = (req, res, next) => {
-    console.log(req);
+
     const authToken = req.cookies.token;
     // Inject the user to the request
     req.user = authToken
